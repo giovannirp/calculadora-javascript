@@ -7,68 +7,13 @@
     <title>Calculadora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-    body {
-        background-color:#050505;
-    }
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        
-    }
-    #calculadora {
-        background-color: #B1B1B1;
-        width: 322px;
-        height: 500px;
-        padding: 6px;
-    }
-    #calculadora .btn {
-        margin: 2px;
-        border-radius: 0;
-        min-height: 44px;
-        outline: none;
-        box-shadow: none;
-    }
-    #calculadora .btn:hover {
-        background-color: #BCBCBC;
-    }
-    #calculadora .btn:active {
-        background-color: #909090;
-    }
-    header {
-        height: 205px;
-        font-size: 36px;
-        font-weight: bold;
-        position: relative;
-    }
-    #display {
-        color: #000;
-        text-align: right;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        font-size: 48px;
-        font-weight: 600;
-    }
-    .btn-number {
-        background-color: #EFEFEF;
-        font-size: 24px;
-        padding-top: 0;
-        padding-bottom: 0;
-        font-weight: 600;
-    }
-    .btn-others {
-        background-color: #D1D1D1;
-        padding-top: 0;
-        padding-bottom: 0;
-        font-size: 20px;
-    }
+
     </style>
 </head>
 <body>
-    
+    <span style="color: #fff;">parei aqui 14. C09 - Switch    15m</span>
     <div class="center">
         <div id="calculadora">
             <header>
@@ -76,9 +21,9 @@
                     0
                 </div>
             </header>
-            <section class="container">
+            <section class="container" id="buttons">
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">%</button>
+                    <button type="button" class="btn btn- btn-others col-porcento">%</button>
                     <button type="button" class="btn btn-others col-sm">√</button>
                     <button type="button" class="btn btn-others col-sm">x²</button>
                     <button type="button" class="btn btn-others col-sm">¹/x</button>
@@ -87,35 +32,39 @@
                     <button type="button" class="btn btn-others col-sm">CE</button>
                     <button type="button" class="btn btn-others col-sm">C</button>
                     <button type="button" class="btn btn-others col-sm">←</button>
-                    <button type="button" class="btn btn-others col-sm">÷</button>
+                    <button type="button" class="btn btn-divisao btn-others col-sm">÷</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">7</button>
-                    <button type="button" class="btn btn-number col-sm">8</button>
-                    <button type="button" class="btn btn-number col-sm">9</button>
-                    <button type="button" class="btn btn-others col-sm">X</button>
+                    <button type="button" class="btn btn-7 btn-number col-sm">7</button>
+                    <button type="button" class="btn btn-8 btn-number col-sm">8</button>
+                    <button type="button" class="btn btn-9 btn-number col-sm">9</button>
+                    <button type="button" class="btn btn-multiplicacao btn-others col-sm">X</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">4</button>
-                    <button type="button" class="btn btn-number col-sm">5</button>
-                    <button type="button" class="btn btn-number col-sm">6</button>
-                    <button type="button" class="btn btn-others col-sm">-</button>
+                    <button type="button" class="btn btn-4 btn-number col-sm">4</button>
+                    <button type="button" class="btn btn-5 btn-number col-sm">5</button>
+                    <button type="button" class="btn btn-6 btn-number col-sm">6</button>
+                    <button type="button" class="btn btnsubtracao btn-others col-sm">-</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">1</button>
-                    <button type="button" class="btn btn-number col-sm">2</button>
-                    <button type="button" class="btn btn-number col-sm">3</button>
-                    <button type="button" class="btn btn-others col-sm">+</button>
+                    <button type="button" class="btn btn-1 btn-number col-sm">1</button>
+                    <button type="button" class="btn btn-2 btn-number col-sm">2</button>
+                    <button type="button" class="btn btn-3 btn-number col-sm">3</button>
+                    <button type="button" class="btn btn-soma btn-others col-sm">+</button>
                 </div>
                 <div class="row">
                     <button type="button" class="btn btn-others col-sm">±</button>
                     <button type="button" class="btn btn-number col-sm">0</button>
                     <button type="button" class="btn btn-others col-sm">,</button>
-                    <button type="button" class="btn btn-others col-sm">=</button>
+                    <button type="button" class="btn btn-igual btn-others col-sm">=</button>
                 </div>
             </section>
         </div>
     </div>
+
+    <script src="js/CalcController.js"></script>
+    <script src="js/calculator.js"></script>
+
 
 </body>
 </html>
