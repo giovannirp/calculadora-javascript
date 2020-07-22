@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <span style="color: #fff;">15. C10 - Adicionando operações - isNaN e Array.length </span>
     <div class="center">
         <div id="calculadora">
             <header>
@@ -23,16 +22,16 @@
                 </div>
             </header>
             <section class="container" id="buttons">
-                <div class="row">
+                <div class="row ButtosDisabled">
                     <button type="button" class="btn btn- btn-others col-porcento">%</button>
-                    <button type="button" class="btn btn-others col-sm">√</button>
-                    <button type="button" class="btn btn-others col-sm">x²</button>
-                    <button type="button" class="btn btn-others col-sm">¹/x</button>
+                    <button type="button" class="btn btn-others col-sm" id="v1">√</button>
+                    <button type="button" class="btn btn-others col-sm" id="x1">x²</button>
+                    <button type="button" class="btn btn-others col-sm" id="x2">¹/x</button>
                 </div>
                 <div class="row">
                     <button type="button" class="btn btn-others col-sm">CE</button>
                     <button type="button" class="btn btn-others col-sm">C</button>
-                    <button type="button" class="btn btn-others col-sm">←</button>
+                    <button type="button" class="btn btn-others col-sm" id="back">←</button>
                     <button type="button" class="btn btn-divisao btn-others col-sm">÷</button>
                 </div>
                 <div class="row">
@@ -54,7 +53,7 @@
                     <button type="button" class="btn btn-soma btn-others col-sm">+</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">±</button>
+                    <button type="button" class="btn btn-others col-sm" id="sinalTruck">±</button>
                     <button type="button" class="btn btn-number col-sm">0</button>
                     <button type="button" class="btn btn-others col-sm">,</button>
                     <button type="button" class="btn btn-igual btn-others col-sm">=</button>
